@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Signup </title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<div id="signupForm" class="container">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="window.location.href = './index.html'">Log In</button>
+				<button type="button" class="toggle-btn">Register</button>
+			</div>
+
+			<div class="soical-icons">
+				<a href="#"><i class="fa fa-facebook-square  fa-6"></i></a>
+				<a href="#"><i class="fa fa-google-plus-square fa-6"></i></a>
+				<a href="#"><i class="fa fa-twitter-square fa-6"></i></a>
+			</div>
+
+			<form id="register" class="input-group">
+				<input id="name" type="text" class="input-field" placeholder="User Name" required />
+				<input id="email" type="email" class="input-field" placeholder="Enter Email" required />
+				<input id="password" type="text" class="input-field" placeholder="Enter Password" required />
+				<input type="checkbox" class="check-box" /><span>I agree to the terms & conditions</span>
+				<button type="submit" onclick="setData()" class="submit-btn">Register</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+
+</html>
